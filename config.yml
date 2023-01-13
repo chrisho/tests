@@ -63,3 +63,9 @@ kubernetes-version: 'v1.21.10+rke2r2'
 
 # Wait time for polling Rancher cluster status.
 rancher-cluster-wait-timeout: 1200
+
+# Upgrade parameters
+upgrade-iso-cache-url: ""
+upgrade-sc-replicas: 3
+upgrade-target-version: 'v1.1.1'
+upgrade-wait-timeout: 7200

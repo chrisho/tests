@@ -194,6 +194,30 @@ def pytest_addoption(parser):
         default=config_data['nfs-mount-dir'],
         help=('mount directory for nfs share')
     )
+    parser.addoption(
+        '--upgrade-iso-cache-url',
+        action='store',
+        default=config_data['upgrade-iso-cache-url'],
+        help=('URL for the local iso cache')
+    )
+    parser.addoption(
+        '--upgrade-sc-replicas',
+        action='store',
+        default=config_data['upgrade-sc-replicas'],
+        help=('default storage class replicas')
+    )
+    parser.addoption(
+        '--upgrade-target-version',
+        action='store',
+        default=config_data['upgrade-target-version'],
+        help=('test target harvester version')
+    )
+    parser.addoption(
+        '--upgrade-wait-timeout',
+        action='store',
+        default=config_data['upgrade-wait-timeout'],
+        help=('Wait time for polling upgrade Harvester cluster completed status')
+    )
 
     # TODO(gyee): may need to add SSL options later
 
